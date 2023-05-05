@@ -1,36 +1,43 @@
 #include<iostream>
 using namespace std;
 class A{
+	
 	private:
 		int a;
 	public:
 		void set(int a1){
-			a=a1;
+		a=a1;
 		}
-		void get(){
-		 cout<<a<<endl;
+		
+	void get(){
+		
+		cout<<a<<endl;
 		}
-	   A operator ++ (){
+	   
+	A operator ++ (){
+	         
 		A ans;
-		 ans.a=++a;
-		 return ans;
+		ans.a=++a;
+		return ans;
 	}
 };
 class B{
+	
 	private:
 		int b;
 	public:
 		void set(int b1){
-			b=b1;
+		b=b1;
 		}
-		void get(){
-		 cout<<b<<endl;
+		
+	void get(){
+        cout<<b<<endl;
 		}
 
 	B operator -- (){
-	    B asn;
-		 asn.b=--b;
-		 return asn;
+	     B asn;
+	     asn.b=--b;
+	     return asn;
 	}
 };
 int main(){
