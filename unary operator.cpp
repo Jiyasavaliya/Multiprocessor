@@ -1,52 +1,107 @@
 #include<iostream>
 using namespace std;
-
 class A{
-	
 	private:
-		
-		int id;
-		
-		public:
-			
-			void set(int i){
-				id=i;
-				
-			}
-			void get(){			
-				cout<<"id: "<<id<<endl;
-			}
-			
-			A operator ++ (int){
-				
-				A temp;
-				
-				temp.id = id++;
-				
-				return temp;
-			}
-			
-				A operator ++ (){
-				
-				A temp;
-				
-				temp.id = ++id;
-				
-				return temp;
-			}
-			
+		int a;
+	public:
+		void set(int a1){
+			a=a1;
+		}
+		void get(){
+		 cout<<a<<endl;
+		}
+	   A operator ++ (){
+		A ans;
+		 ans.a=++a;
+		 return ans;
+	}
+};
+class B{
+	private:
+		int b;
+	public:
+		void set(int b1){
+			b=b1;
+		}
+		void get(){
+		 cout<<b<<endl;
+		}
+
+	B operator -- (){
+	    B asn;
+		 asn.b=--b;
+		 return asn;
+	}
 };
 int main(){
-	
-	A obj1,obj2,obj3;
-	
+	A obj1,obj2;
+	cout<<"Increment"<<endl;
 	obj1.set(1);
 	obj1.get();
-	
-	obj2 = obj1++;
+	obj2 = ++obj1;
 	obj2.get();
-	
-	obj3 = ++obj1;
-	obj3.get();
-	
+	cout<<endl;
+
+	B ob1,ob2;
+	cout<<"Decrement"<<endl;#include<iostream>
+using namespace std;
+class A{
+	private:
+		int a;
+	public:
+		void set(int a1){
+			a=a1;
+		}
+		void get(){
+		 cout<<a<<endl;
+		}
+	   A operator ++ (){
+		A ans;
+		 ans.a=++a;
+		 return ans;
+	}
+};
+class B{
+	private:
+		int b;
+	public:
+		void set(int b1){
+			b=b1;
+		}
+		void get(){
+		 cout<<b<<endl;
+		}
+
+	B operator -- (){
+	    B asn;
+		 asn.b=--b;
+		 return asn;
+	}
+};
+int main(){
+	A obj1,obj2;
+	cout<<"Increment"<<endl;
+	obj1.set(1);
+	obj1.get();
+	obj2 = ++obj1;
+	obj2.get();
+	cout<<endl;
+
+	B ob1,ob2;
+	cout<<"Decrement"<<endl;
+	ob1.set(1);
+	ob1.get();
+	ob2 = --ob1;
+	ob2.get();
+
+	return 0;
+
+}
+	ob1.set(1);
+	ob1.get();
+	ob2 = --ob1;
+	ob2.get();
+
+	return 0;
+
 }
