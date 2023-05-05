@@ -10,7 +10,7 @@ public:
 
     InchFeet(int in, int ft) {
         
-		inch = in;
+	inch = in;
         feet = ft;
     }
 
@@ -39,7 +39,8 @@ public:
     }
 };
 
-int main() {
+   int main() {
+    
     InchFeet obj1(4, 3);
     InchFeet obj2(5, 7);
 
